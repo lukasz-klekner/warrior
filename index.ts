@@ -6,12 +6,10 @@ import { Warrior } from "./Warrior";
   
   const arena = new Arena(fighter1, fighter2);
   
-  let winner: Warrior | number | null;
+  let winner: Warrior | null;
   do {
     winner = arena.fight();
   } while (winner === null);
   
-  if(winner instanceof Warrior){
   winner.levelUp();
-  console.log(winner.getName(), 'is a winner!');
-}
+  console.log(winner.name, 'is a winner!')
