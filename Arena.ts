@@ -1,7 +1,7 @@
 import { Warrior } from "./Warrior";
 
   
-  class Arena {
+  export class Arena {
     private activeWarrior: number;
 
     constructor(public warrior1: Warrior,public warrior2: Warrior) {
